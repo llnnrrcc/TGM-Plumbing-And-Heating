@@ -14,13 +14,6 @@ js/script.js          Mobile nav toggle + form handling
 assets/                Images / logo (placeholders for now)
 ```
 
-## Customizing (placeholder content to replace)
-
-- Email address — currently a placeholder, search for `[EMAIL]` across the HTML files.
-- Logo — drop a logo file into `assets/` and swap the text logo in the header.
-- Colors — edit the CSS variables at the top of `css/style.css` (`--color-primary`, `--color-accent`).
-- Business hours on `contact.html` are a placeholder — confirm real opening hours.
-
 ## Setting up the quote form
 
 The form on `contact.html` posts to [Formspree](https://formspree.io) so submissions get emailed — no backend required. To activate it:
@@ -39,7 +32,3 @@ No build step needed — just open `index.html` in a browser, or serve the folde
 ```
 npx serve .
 ```
-
-## Deploying
-
-Since this is a static site, it can be hosted for free on Netlify, Vercel, GitHub Pages, or similar.
