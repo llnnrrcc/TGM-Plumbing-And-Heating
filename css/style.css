@@ -156,3 +156,188 @@ p {
 .btn-secondary:hover {
   background: var(--color-primary-dark);
 }
+
+/* ===================================================
+   Emergency banner
+   =================================================== */
+.emergency-banner {
+  background: var(--color-accent);
+  color: var(--color-white);
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.emergency-banner a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* ===================================================
+   Header / nav
+   =================================================== */
+.site-header {
+  background: var(--color-primary-dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--color-accent);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.nav-call {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-phone {
+  color: var(--color-white);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-toggle span {
+  width: 26px;
+  height: 3px;
+  background: var(--color-white);
+  border-radius: 2px;
+}
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-primary-dark);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .main-nav.open {
+    max-height: 400px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 14px 20px;
+  }
+
+  .nav-call {
+    padding: 16px 20px;
+  }
+}
+
+/* ===================================================
+   Footer
+   =================================================== */
+.site-footer {
+  background: var(--color-primary-dark);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 48px 0 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-grid h4 {
+  color: var(--color-white);
+  margin-bottom: 1em;
+}
+
+.footer-grid a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-grid a:hover {
+  color: var(--color-accent);
+}
+
+.footer-grid li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
