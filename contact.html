@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | TGM Plumbing & Heating</title>
+  <meta name="description" content="Get a free, no-obligation quote from TGM Plumbing & Heating in Bedford. Call 07847 756181 or fill in the quote request form." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="emergency-banner">
+    24/7 Emergency Call-Out — Call now on <a href="tel:07847756181">07847 756181</a>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">TGM <span>Plumbing & Heating</span></a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-call">
+          <a href="tel:07847756181" class="nav-phone">07847 756181</a>
+          <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Get a Free Quote</h1>
+        <p>Tell us a bit about the job and we'll get back to you with a free, no-obligation quote.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div>
+            <h2>Contact Details</h2>
+            <ul class="contact-info-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div><strong>Phone</strong><a href="tel:07847756181">07847 756181</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                <div><strong>Email</strong><a href="mailto:[EMAIL]">[EMAIL]</a></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11z"/><circle cx="12" cy="11" r="3"/></svg>
+                <div><strong>Address</strong><span>Granet Cl, Bedford MK40 4HZ</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <div><strong>Hours</strong><span>Mon–Fri: 8am–6pm<br />Emergency call-outs: 24/7</span></div>
+              </li>
+            </ul>
+
+            <div class="emergency-note">
+              <p><strong>Got an emergency?</strong> Don't wait for a reply — call <a href="tel:07847756181">07847 756181</a> now for urgent plumbing or heating issues.</p>
+            </div>
+          </div>
+
+          <!-- Quote form -->
+          <div>
+            <form class="quote-form" id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                  <option value="">Please select...</option>
+                  <option>Boiler Installation &amp; Repair</option>
+                  <option>Central Heating</option>
+                  <option>General Plumbing</option>
+                  <option>Bathroom Installation</option>
+                  <option>Gas Safety Check / Certificate</option>
+                  <option>Leak Detection &amp; Repair</option>
+                  <option>Power Flushing</option>
+                  <option>Emergency Call-Out</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell Us About the Job</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <p class="form-note">We'll never share your details with anyone else.</p>
+
+              <button type="submit" class="btn btn-primary">Send Quote Request</button>
+
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>TGM Plumbing & Heating</h4>
+          <p>Reliable, friendly plumbing and heating engineers serving Bedford and the surrounding areas.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:07847756181">07847 756181</a></li>
+            <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+            <li>Granet Cl, Bedford MK40 4HZ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> TGM Plumbing & Heating. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
